@@ -1,17 +1,20 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-const int WIDTH=800, HEIGHT=800;
 
-int main(int argc, char *argv[])
+const int WIDTH = 800, HEIGHT = 800;
+
+
+int main( int argc, char *argv[] )
 {
+
     SDL_Init( SDL_INIT_EVERYTHING );
 
     SDL_Window *window = SDL_CreateWindow( "Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, SDL_WINDOW_ALLOW_HIGHDPI );
 
-    if (window == nullptr) 
+    if ( window == nullptr ) 
     {
-        std::cout << "Error creating window: " << SDL_GetError();
+        std::cout << "Error creating window: " << SDL_GetError( );
         return EXIT_FAILURE;
     }
 
@@ -19,9 +22,9 @@ int main(int argc, char *argv[])
 
     while (true) 
     {
-        if (SDL_PollEvent(&windowEvent))
+        if (SDL_PollEvent( &windowEvent ))
         {
-            if (windowEvent.type == SDL_QUIT)
+            if ( windowEvent.type == SDL_QUIT )
             {
                 break;
             }
