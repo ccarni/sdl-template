@@ -1,6 +1,6 @@
 # SDL Template
 A simple template for Simple DirectMedia Layer (SDL2) 2.28.5 built for Windows.
-By default, it just creates an empty 800x800 window.
+By default, it just creates an empty 800x800 window when run.
 
 ![image](https://github.com/ccarni/sdl-template/assets/94944656/bcfd8910-dc14-4a51-a5fc-b35a0bb51d3f)
 
