@@ -4,7 +4,7 @@ CC = g++
 #Directories
 BIN_DIR = bin
 INC_DIR = include
-LIB_DIR = lib
+LIB_DIR = lib/sdl2
 SRC_DIR = src
 
 # Files
